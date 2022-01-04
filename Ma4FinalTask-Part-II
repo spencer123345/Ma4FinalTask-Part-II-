@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main () {
+
+int in;
+
+    printf("Input Any Postive Integers: ");
+    scanf("%d", &in);
+
+    //while do not reach 1
+  while(in != 1){
+
+    if(in % 2 == 0){ //for even numbers
+      in = in / 2;
+      printf("current given value is %d\n", in);
+    }
+    else{ //for odd numbers
+      in = in * 3 + 1;
+      printf("current given value is %d\n", in);
+    }
+  }
+
+  return 0;
+}
